@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <title>calculating compound interest</title>
+   <style>
+	.table_line {
+		display: table;
+		width: 580px;
+	}
+	
+	.block {
+		display: table-cell;
+		border: none;
+		width: 180px;
+	}
+    </style>
+</head>
+<body>
+   <h1 id="headTitle">calculating compound interest</h1>
+   <p>
+Finding out how much reserve you need each month to reach your target amount.
+   </p>
+   <p>
+       <div class="table">
+	 <div class="table_line">
+          <div class="block">Principal</div>
+          <div class="block"><input type='text' id="principalInput" name="principal"></div>
+          <div class="block">$</div>
+       </div>
+	 <div class="table_line">
+          <div class="block">Each month reserve</div>
+          <div class="block"><input type='text' id="reserveInput" name="reserve"></div>
+          <div class="block">$</div>
+       </div>
+	 <div class="table_line">
+          <div class="block">Annual expected return</div>
+          <div class="block"><input type='text' id="expectedreturnInput" name="expectedreturn"></div>
+          <div class="block">%</div>
+       </div>
+	 <div class="table_line">
+          <div class="block">Period</div>
+          <div class="block"><input type='text' id="periodInput" name="period"></div>
+          <div class="block">years</div>
+       </div>
+       </div>
+
+       <button type="button" id="calcCompoundInterestButton" onclick="onCalcCompoundInterestButtonClick()">Calculation</button>
+   </p>
+
+<script src="./CalcCompoundInterest.js">
+</script>
+
+   <p id="ciamountResult">Fill in the blanks above and click "Calculation".
+   </p>
+
+</body>
+</html>
